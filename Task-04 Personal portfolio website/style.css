@@ -1,0 +1,219 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+nav{
+    font-size: 20px;
+    color:white;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position: fixed;
+}
+nav li{
+    display:inline-block;
+    margin:0 10px;
+}
+.logo{
+    font-size: 40px;
+    font-weight:bolder;
+    margin-left: 5%;
+    text-shadow: 0 0 5px #0ff, 0 0 0px #0ff, 0 0 0px #0ff, 0 0 40px #0ff;
+}
+nav  a{
+    color:white;
+    text-decoration: none;
+
+
+}
+nav a:hover{
+    font-size: 1.5rem;
+    text-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff, 0 0 80px #0ff;
+}
+
+.menu-line{
+    height:3px;
+    width:20px;
+    background-color: rgb(233, 232, 243);
+    margin-bottom:3px;
+}
+
+.menu{
+    cursor:pointer;
+    display:none;
+}
+nav ul{
+    margin-right: 5%;
+}
+
+@media all and (max-width:740px)
+{
+    nav {
+        flex-direction:column;
+    }
+    nav li{
+        padding:10px 0;
+        display :block;
+    }
+    ul{
+        text-align:center;
+        padding:0;
+        display:none;
+    }
+    .showmenu{
+        display:block;
+     
+    }
+    .menu {
+        display: block; 
+        right:20px;
+        top:25px;
+        position:absolute;
+    }
+    .my_skills{
+        padding:10px !important;
+        margin-right: 20px !important;
+        width:80% !important;
+        height:700px !important;
+    }
+    .my_skills img{
+        height:100px !important;
+        width:100px !important;
+        margin-bottom: 20px !important;
+       
+    }
+}
+.container{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 100px;
+
+}
+.circle{
+    height:400px;
+    width:400px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff, 0 0 80px #0ff;
+    margin-top: 11%;
+
+}
+.circle img{
+    height:400px;
+    width:400px;
+    border-radius: 50%;
+}
+.content{
+    max-width: 700px;
+}
+span{
+   
+    text-shadow: 0 0 5px #39FF14, 0 0 10px #39FF14, 0 0 20px #39FF14, 0 0 30px #39FF14;
+}
+
+h2 {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    font-size: 1.5em;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid #0ff;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #0ff;
+    }
+}
+#skills{
+    display: flex;
+    justify-content: center;
+}
+
+.my_skills{
+    margin-top:2em;
+    height:400px;
+    width:70%;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin-bottom:50px;
+    box-shadow: 0 0 7px #0ff, 0 0 10px #0ff, 0 0 15px #0ff, 0 0 20px #0ff;
+    object-fit: contain;
+   
+}
+.my_skills img{
+    height:120px;
+    width:120px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.my_skills img:hover{
+    box-shadow: 0 0 7px #0ff, 0 0 10px #0ff, 0 0 15px #0ff, 0 0 20px #0ff;
+
+}
+h1{
+    text-align: center;
+    margin-top: 170px;
+}
+#project{
+    margin-top: 30px;
+    display:flex;
+    justify-content: center;
+    gap:15%;
+    margin-bottom: 50px;
+}
+.box{
+    height:500px;
+    width:300px;
+    border: 1px solid white;
+    position: relative;
+
+}
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.overlay{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+    line-height: 1.5;
+    padding: 10px;
+}
+.box:hover .overlay {
+    opacity: 1; 
+ 
+}
+.container{
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap:50px;
+}
+.content{
+    text-align: center;
+}
